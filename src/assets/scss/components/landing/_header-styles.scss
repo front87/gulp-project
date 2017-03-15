@@ -1,4 +1,16 @@
-.top-screen {position: relative;}
+.top-screen {
+  background: url(../img/head-bg.jpg) 50%/cover no-repeat;
+  position: relative;
+  &.main {
+    background: none;
+    @include breakpoint(large down) {
+      background: url(../img/head-bg.jpg) 50%/cover no-repeat;
+    }
+    .page-title {
+      padding: 225px 0 185px;
+    }
+  }
+}
 
 /*  header slider */
 .header-slider {
@@ -6,6 +18,7 @@
   left: 0;
   top: 0;
   width: 100%;
+  @include breakpoint(large down) {}
   .slick-slider {
     position: absolute;
     height: 100%;
@@ -75,5 +88,13 @@
       font: 400 15px/26px 'Montserrat', sans-serif;
       text-transform: uppercase;
     }
+  }
+}
+.page-title {
+  //padding: 225px 0 185px;
+  h1 { display: inline-block; }
+  p {
+    color: #fff;
+    margin: 40px 0 55px;
   }
 }
