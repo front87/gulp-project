@@ -1,0 +1,15 @@
+.contact-methods {
+  padding: rem-calc(105px) 0;
+}
+.article-holder {
+  .article-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    margin-bottom: rem-calc(55);
+  }
+  .article-footer {
+    margin-top: rem-calc(30);
+  }
+}

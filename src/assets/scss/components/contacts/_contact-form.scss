@@ -1,0 +1,25 @@
+.contact-form-grid {
+  input, textarea {
+    border: 2px solid #0d113d;
+    border-radius: 5px;
+    color: #0d113d;
+    margin-bottom: rem-calc(34);
+    padding: rem-calc(16) rem-calc(24);
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+  .btn-holder {
+    display: flex;
+    justify-content: flex-end;
+  }
+  button {
+    background: #753d9d;
+    border-radius: 4px;
+    color: #fff;
+    font-size: rem-calc(18);
+    padding: rem-calc(20) rem-calc(94);
+    text-transform: uppercase;
+  }
+}

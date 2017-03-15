@@ -1,8 +1,10 @@
 .top-screen {
   background: url(../img/head-bg.jpg) 50%/cover no-repeat;
+  padding-bottom: rem-calc(20);
   position: relative;
   &.main {
     background: none;
+    padding-bottom: 0;
     @include breakpoint(large down) {
       background: url(../img/head-bg.jpg) 50%/cover no-repeat;
     }
@@ -91,10 +93,41 @@
   }
 }
 .page-title {
-  //padding: 225px 0 185px;
+  padding: rem-calc(100) 0 rem-calc(55);
   h1 { display: inline-block; }
   p {
     color: #fff;
     margin: 40px 0 55px;
+  }
+}
+
+
+.breadcrumbs-list {
+  display: flex;
+  li {
+    position: relative;
+    padding-right: rem-calc(35);
+    margin-right: rem-calc(8);
+    &:after {
+      background: url(../img/breadcrumb-arrow.png) 50% no-repeat;
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 24px;
+    }
+    &:last-child {
+      padding-right: 0;
+      margin-right: 0;
+      &:after { content: none; }
+    }
+    &:hover, &.active {
+      a { color: #a066c9; }
+    }
+    a {
+      color: #fff;
+      font-size: inherit;
+    }
   }
 }
