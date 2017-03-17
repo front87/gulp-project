@@ -14,3 +14,7 @@
   bottom: $bottom;
   right: $right;
 }
+@mixin size($width, $height:$width) {
+  height: $height;
+  width: $width;
+}

@@ -1,0 +1,27 @@
+.join-us {
+  background: url(../img/join-banner.jpg) no-repeat 50%/cover ;
+  padding: 118px 0 100px;
+  position: relative;
+  &:after {
+    @include position($left:0, $top:0);
+    @include size(100%);
+    content: '';
+    background-color: rgba(25,11,35,0.6);
+  }
+  .inner-holder {
+    position: relative;
+    z-index: 2;
+  }
+  h2 {
+    color: $white;
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 60px;
+  }
+}
+
+
+.about_text-block {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}

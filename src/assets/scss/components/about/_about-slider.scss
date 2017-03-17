@@ -1,0 +1,42 @@
+.about_team-wrapper {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  position: relative;
+}
+
+.team-slider {
+  margin-top: 60px;
+  .img-border-wrapper {
+    border: 1px solid #f5f5f5;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .slick-arrow {
+    top: 55px;
+  }
+}
+.team-slider_unit {
+  margin-top: 24px;
+  text-align: center;
+  p {
+    color: $dark-blue;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  h5 {
+    color: $magenta;
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
+
+
+
+
+
+
+
