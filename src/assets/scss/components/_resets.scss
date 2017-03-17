@@ -47,7 +47,7 @@ h3 {
   background-color: #753d9d;
 }
 
-.flex-row {display: flex;}
+.flex-row, .flex-block {display: flex;}
 .flex-row.align-center {align-items: center;}
 .flex-row.justify-between {justify-content: space-between;}
 

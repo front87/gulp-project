@@ -1,0 +1,16 @@
+@mixin hr-line($width:100px, $height:5px, $margin-left:0, $margin-top:0, $margin-right: $margin-left, $margin-bottom:$margin-top, $color:$magenta, $radius:$height) {
+  background-color: $color;
+  border-radius: $radius;
+  display: block;
+  margin: $margin-top $margin-right $margin-bottom $margin-left;
+  height: $height;
+  width: $width;
+}
+
+@mixin position($position:absolute, $left:auto, $top:auto, $right:auto, $bottom:auto) {
+  position: $position;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+}

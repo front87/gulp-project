@@ -51,9 +51,13 @@
 //@include motion-ui-animations;
 
 @import 'vendor/slick';
+@import 'components/mixins';
 @import 'components/resets';
 @import 'components/landing/header-styles';
 @import 'components/landing/styless';
 @import 'components/contacts/contact-methods';
 @import 'components/contacts/map-block';
 @import 'components/contacts/contact-form';
+@import 'components/about/about-content';
+@import 'components/about/about-sidebar';
+@import 'components/about/about-slider';

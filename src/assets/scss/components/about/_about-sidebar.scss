@@ -1,0 +1,21 @@
+.banner-block {
+  border-radius: 4px;
+  margin-bottom: 28px;
+  min-height: 255px;
+  padding: 30px;
+  &.iconed-block {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  p {
+    color: $white;
+    font-size: 21px;
+    line-height: 29px;
+    margin: 0;
+  }
+}
+.dark-blue-bg { background-color: $dark-blue; }
+.magenta-bg { background-color: $magenta; }
+
+
+.banner-block_icon { margin-bottom: 34px; }
