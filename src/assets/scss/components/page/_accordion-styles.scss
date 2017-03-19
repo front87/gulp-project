@@ -5,18 +5,50 @@
   > li {
     border-bottom: 2px solid #e6e6e6;
     padding: 18px 0;
+    &[aria-expanded="false"] {
+      //.accordion-opener:before{}
+    }
+    &[aria-expanded="true"] {
+      .accordion-opener {
+        &:before {
+          opacity: 1;
+          visibility: visible;
+        }
+        &:after {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
   }
   .nested {
     margin-left: 35px;
   }
   a {
     color: $dark-blue;
+    display: inline-block;
     font-size: 15px;
     font-weight: 300;
+    width: 100%;
     &:active, &:hover { color: $magenta; }
-    &.accordion-opener {
-      color: $dark-blue;
-      font-weight: 600;
+  }
+  .accordion-opener {
+    font-weight: 600;
+    position: relative;
+    padding-right: 15px;
+    &:before, &:after {
+      @include position($top:50%, $right:0);
+      @include transition(all);
+      transform: translateY(-50%);
+      color: inherit;
+      font-size: 15px;
+      font-family: 'FontAwesome';
     }
+    &:before {
+      content:'\f106';
+      opacity: 0;
+      visibility: hidden;
+    }
+    &:after { content:'\f107'; }
   }
 }
