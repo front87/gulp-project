@@ -51,7 +51,7 @@
 
 <main class="about-page">
   <div class="about_content-wrapper row align-top">
-    <div class="about_content small-12 medium-6 large-9 columns">
+    <div class="about_content small-12 medium-6 large-9 columns"  id="sickyMain">
       <h1 class="about-title hr-bottom">Web Design</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus sodales nibh, non malesuada lacus
         pulvinar at. Donec arcu ligula, vestibulum non nisi vel, bibendum gravida nunc. Integer quam leo, imperdiet eget
@@ -83,7 +83,7 @@
         Praesent pellentesque auctor nisi, at facilisis urna ultrices sed. Sed eleifend nulla vitae odio viverra
         facilisis. Praesent aliquet odio id leo aliquet auctor.</p>
     </div>
-    <div class="about_sidebar small-12 medium-6 large-3 columns">
+    <div class="about_sidebar small-12 medium-6 large-3 columns" data-sticky-container>
       <!--<div class="banner-block flex-block align-middle dark-blue-bg">-->
         <!--<p>Interactive digital<br>experiences are continually</p>-->
       <!--</div>-->
@@ -91,27 +91,29 @@
         <!--<img src="assets/img/award-pic.png" alt="award picture" class="banner-block_icon"/>-->
         <!--<p>16 awards winning</p>-->
       <!--</div>-->
-      <h3 class="bordered">menu</h3>
-      <div class="accordion-wrapper">
-        <ul class="page-accordion" data-accordion-menu>
-          <li><a href="#">Website/UI Design</a></li>
-          <li><a href="#">Content Management System</a></li>
-          <li><a href="#">Brand Awareness</a></li>
-          <li><a href="#">E-Commerce</a></li>
-          <li><a href="#">Search Engine Optimization</a></li>
-          <li>
-            <a href="#" class="accordion-opener">Social Media</a>
-            <ul class="nested">
-              <li><a href="#">Design</a></li>
-              <li><a href="#">Development</a></li>
-              <li><a href="#">Advertising</a></li>
-              <li><a href="#">Stategies</a></li>
-            </ul>
-          </li>
-          <li><a href="#">E-mail Advertising</a></li>
-          <li><a href="#">Social Media Applications</a></li>
-          <li><a href="#">Web Application Development</a></li>
-        </ul>
+      <div class="stiky" data-sticky data-anchor="sickyMain">
+        <h3 class="bordered">menu</h3>
+        <div class="accordion-wrapper">
+          <ul class="page-accordion" data-accordion-menu>
+            <li><a href="#">Website/UI Design</a></li>
+            <li><a href="#">Content Management System</a></li>
+            <li><a href="#">Brand Awareness</a></li>
+            <li><a href="#">E-Commerce</a></li>
+            <li><a href="#">Search Engine Optimization</a></li>
+            <li>
+              <a href="#" class="accordion-opener">Social Media</a>
+              <ul class="nested">
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Stategies</a></li>
+              </ul>
+            </li>
+            <li><a href="#">E-mail Advertising</a></li>
+            <li><a href="#">Social Media Applications</a></li>
+            <li><a href="#">Web Application Development</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
