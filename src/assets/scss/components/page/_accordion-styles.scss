@@ -5,11 +5,9 @@
   > li {
     border-bottom: 2px solid #e6e6e6;
     padding: 18px 0;
-    &[aria-expanded="false"] {
-      //.accordion-opener:before{}
-    }
     &[aria-expanded="true"] {
       .accordion-opener {
+        color: $magenta;
         &:before {
           opacity: 1;
           visibility: visible;
