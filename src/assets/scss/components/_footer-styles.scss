@@ -1,0 +1,98 @@
+.footer-wrapepr {
+  background: $dark-blue;
+}
+
+.footer_form {
+  background-color: $magenta;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 75px;
+  padding: 32px 18px 32px 24px;
+  &_title {
+    @include breakpoint(medium down) {
+      margin-bottom: 15px;
+    }
+    h3 {
+      color: $white;
+      font-size: 21px;
+    }
+    p {
+      color: $white;
+      line-height: 1;
+    }
+  }
+  &_email {
+    background-color: transparent;
+    border: 2px solid #d3b1eb;
+    border-radius: 4px;
+    color: #e0c2f6;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 18px 30px;
+    width: 100%;
+    @include breakpoint(small down) {
+      margin-bottom: 15px;
+    }
+  }
+  .my-btn {
+    max-width: 210px;
+    font-size: 16px;
+    padding: 18px 0;
+  }
+}
+.footer_nav {
+  .logo-holder {
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  p { color: $white; }
+
+}
+
+.footer_nav-column {
+  &:last-child {
+    .footer_nav-list { border-right: none; }
+  }
+}
+.footer_nav-list {
+  margin-top: 35px;
+  border-right: 1px solid #1e224d;
+  li {
+    color: $white;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 24px;
+    &.active { color: $magenta; }
+    a {
+      color:inherit;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.footer_social {
+  margin-top: 70px;
+  padding-bottom: 35px;
+  .hr-holder { padding-bottom: 35px; }
+  .hr {
+    @include hr-line($width:100%, $height:1px, $color:#1e224d, $radius:0);
+  }
+  .copyright {
+    color: #b3b5d1;
+    p { color: inherit; }
+  }
+}
+
+.footer_social-list {
+  li {
+    font-size: 16px;
+    margin-right: 28px;
+    color: $white;
+    &:last-child { margin-right: 0; }
+  }
+  a {
+    display: inline-block;
+    &:hover { color: $magenta; }
+  }
+}

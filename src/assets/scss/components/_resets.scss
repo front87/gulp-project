@@ -92,3 +92,17 @@ a {
   color: #0d113d;
   border-color: #0d113d;
 }
+
+input[type="text"],
+input[type="select"],
+textarea,
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+.inline-list {
+  font-size: 0;
+  li { display: inline-block; }
+}
