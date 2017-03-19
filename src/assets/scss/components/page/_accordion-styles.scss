@@ -1,0 +1,22 @@
+.accordion-wrapper {
+  margin: 40px 0 0 20px;
+}
+.page-accordion {
+  > li {
+    border-bottom: 2px solid #e6e6e6;
+    padding: 18px 0;
+  }
+  .nested {
+    margin-left: 35px;
+  }
+  a {
+    color: $dark-blue;
+    font-size: 15px;
+    font-weight: 300;
+    &:active, &:hover { color: $magenta; }
+    &.accordion-opener {
+      color: $dark-blue;
+      font-weight: 600;
+    }
+  }
+}

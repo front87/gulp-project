@@ -1,4 +1,4 @@
-//$(document).foundation()
+$('.page-accordion').foundation();
 
 $(document).ready(function(){
     $('.portfolio-slider').slick({
