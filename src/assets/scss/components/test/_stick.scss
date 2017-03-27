@@ -1,0 +1,31 @@
+.sticky-header {
+  @include transition(padding);
+  background-color: #000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &.is-stuck {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .logo {
+    @include size($width:100px, $height:30px);
+    background-color: #fff;
+  }
+  nav {
+    ul { overflow: hidden; }
+    li {
+      color: #fff;
+      float: left;
+      font-size: 16px;
+    }
+  }
+}
+
+.top-info {
+  height: 60px;
+  background: #00ba00;
+  .column {
+    color: $white;
+    margin: 0;
+  }
+}
