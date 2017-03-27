@@ -29,3 +29,33 @@
     margin: 0;
   }
 }
+
+
+
+
+.sticky-example {
+  .sticky {width: 100%;}
+  .block {
+    height:50px;
+    margin-bottom: 10px;
+    background-color: #f00;
+    width: 100%;
+    &:nth-child(2n) { background-color: #0f0; }
+  }
+}
+
+
+.ex-2 {
+  .top-row { margin-bottom: 50px; }
+  .contant-holder { height: 1000px; }
+  .sticky-wrapper {
+    width: 100%;
+    .block {
+      height:50px;
+      margin-bottom: 10px;
+      background-color: #f00;
+      width: 100%;
+      &:nth-child(2n) { background-color: #0f0; }
+    }
+  }
+}
