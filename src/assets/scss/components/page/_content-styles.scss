@@ -1,0 +1,12 @@
+.about_content_img-holder {
+  display: inline-block;
+  margin-bottom: 32px;
+  position: relative;
+  &:after {
+    @include position($left:0, $top:0);
+    @include size(100%);
+    background-color: rgba(#190b23, 0.7);
+    content: '';
+  }
+}
+.about_content_img { display: inline-block; }
