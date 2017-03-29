@@ -11,7 +11,7 @@
 //@include foundation-button;
 //@include foundation-forms;
 // @include foundation-range-input;
-//@include foundation-accordion;
+@include foundation-accordion;
 //@include foundation-accordion-menu;
 //@include foundation-badge;
 //@include foundation-breadcrumbs;
@@ -68,3 +68,4 @@
 @import 'components/page/accordion-styles';
 @import 'components/page/content-styles';
 @import 'components/test/stick';
+@import 'components/test/accordion-styles';

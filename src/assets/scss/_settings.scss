@@ -172,6 +172,11 @@ $keystroke-padding: rem-calc(2 4 0);
 $keystroke-radius: $global-radius;
 $abbr-underline: 1px dotted $black;
 
+// My Colors Set
+// --------------------
+$dark-blue: #0d113d;
+$magenta: #753d9d;
+
 // 5. Typography Helpers
 // ---------------------
 
@@ -198,16 +203,28 @@ $input-error-font-weight: $global-weight-bold;
 // 7. Accordion
 // ------------
 
+//$accordion-background: $white;
+//$accordion-plusminus: true;
+//$accordion-title-font-size: rem-calc(12);
+//$accordion-item-color: $primary-color;
+//$accordion-item-background-hover: $light-gray;
+//$accordion-item-padding: 1.25rem 1rem;
+//$accordion-content-background: $white;
+//$accordion-content-border: 1px solid $light-gray;
+//$accordion-content-color: $body-font-color;
+//$accordion-content-padding: 1rem;
+
+
 $accordion-background: $white;
-$accordion-plusminus: true;
-$accordion-title-font-size: rem-calc(12);
-$accordion-item-color: $primary-color;
-$accordion-item-background-hover: $light-gray;
-$accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $white;
-$accordion-content-border: 1px solid $light-gray;
-$accordion-content-color: $body-font-color;
-$accordion-content-padding: 1rem;
+$accordion-plusminus: false;
+$accordion-title-font-size: rem-calc(15);
+$accordion-item-color: $dark-blue;
+$accordion-item-background-hover: $white;
+$accordion-item-padding: rem-calc(18) 0;
+$accordion-content-border: 0;
+$accordion-content-color: $dark-blue;
+$accordion-content-padding: rem-calc(15) 0 rem-calc(15) rem-calc(36);
 
 // 8. Accordion Menu
 // -----------------
@@ -446,8 +463,7 @@ $offcanvas-fixed-reveal: true;
 $offcanvas-exit-background: rgba($white, 0.25);
 $maincontent-class: 'off-canvas-content';
 
-$dark-blue: #0d113d;
-$magenta: #753d9d;
+
 
 // 25. Orbit
 // ---------

@@ -1,0 +1,58 @@
+// test-page styles
+
+.accordions-block-wrapper {
+  padding: {
+    top: 40px;
+    bottom: 40px;
+  }
+}
+
+.accordion-header {
+  color: $magenta;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.accordion-holder {
+  .accordion-item { border-bottom: 2px solid #e6e6e6; }
+  .accordion-content {
+    p {
+      color: $dark-blue;
+      font-weight: $global-weight-normal;
+    }
+  }
+}
+.accordion-title {
+  &:hover,
+  &:focus { color: $magenta; }
+  &::before {
+    @include position($top:50%, $right:1rem);
+    content: '\f078';
+    font-family: 'FontAwesome';
+    transform: translateY(-50%);
+  }
+  .is-active > &::before { content: '\f077'; }
+  [aria-expanded="true"] > &::before { content: '\f077'; }
+  &--no-padding {
+    padding: {
+      top: 0;
+      bottom: 0;
+    }
+  }
+}
+
+
+
+.accordion-menu {
+  &_item {
+    border-bottom: 2px solid #e6e6e6;
+    padding: 18px 0;
+  }
+  &_link {
+    color: $dark-blue;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    width: 100%;
+  }
+}
