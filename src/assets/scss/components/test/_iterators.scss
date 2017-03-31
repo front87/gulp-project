@@ -1,0 +1,65 @@
+.iterators-page-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  & + .footer-wrapepr { display: none; }
+}
+
+.simple-container {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+
+//- @for example
+//-------------------
+$class-name: iteration;
+@for $i from 1 through 5 {
+  .#{$class-name}-#{$i} {
+    background-color: #000;
+    height: 40px;
+    width: #{40 * $i}px;
+  }
+}
+
+//- @each example
+//-------------------
+.each-example {
+  &-1 {
+    background-color: #e0e0e0;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 0 15px;
+  }
+  &-2 { margin-bottom: 15px; }
+  &:last-child { margin-bottom: 0; }
+}
+@each $var in first, second, third, fourth, fifth {
+  .each-example-1.#{$var}:before {
+    content: '#{$var}';
+  }
+}
+
+$classes-list: (
+  first #f00 #ff0,
+  second #0f0 #f0f,
+  third #00f #ff0,
+  fourth #f0f #0f0,
+  fifth #ff0 #f00
+);
+@each $var in $classes-list {
+  .each-example-2.#{nth($var, 1)} {
+    background-color: nth($var, 3);
+    &:before {
+      content: '#{nth($var, 1)}';
+      color: nth($var, 2);
+    }
+  }
+}
+
+
+
+
