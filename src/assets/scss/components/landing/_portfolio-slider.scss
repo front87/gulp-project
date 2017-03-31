@@ -15,25 +15,27 @@
     position: absolute;
     top: 10px;
     width: 30px;
+
     &.slick-prev {
-      background: url(../img/portfolio-prev-btn.png) 50%;
+      background: url($imgPath+'portfolio-prev-btn.png') 50%;
       right: 55px;
     }
     &.slick-next {
-      background: url(../img/portfolio-next-btn.png) 50%;
+      background: url(#{$imgPath}portfolio-next-btn.png) 50%;
       right: 15px;
     }
   }
 }
-
-.portfolio-slider {
+$prop: color;
+$className: slider;
+.portfolio-#{$className} {
   .slide-wrapper {
     &:hover .img-border-wrapper:after {background-color: transparent;}
   }
   .img-border-wrapper {
     &:after {
-      background-color: rgba(25, 11, 35, 0.6);
-      content: '';
+      background-#{$prop}: rgba(25, 11, 35, 0.6);
+      content: 'sum is #{4 + 2}';
       position: absolute;
       left: 0;
       top: 0;
