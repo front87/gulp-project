@@ -1,26 +1,26 @@
 body, html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: #{$body-font-family}, sans-serif;
   overflow-x: hidden;
   width: 100%;
 }
 
 h1 {
   color: #ffffff;
-  font: 800 70px/1 'Montserrat', sans-serif;
+  font: 800 70px/1 #{$body-font-family}, sans-serif;
   margin: 0;
 }
-.h1 {font: 800 70px/1 'Montserrat', sans-serif;}
+.h1 {font: 800 70px/1 #{$body-font-family}, sans-serif;}
 .magenta {color: #a066c9;}
 
 h2 {
   color: #0d113d;
-  font: 600 33px/26px 'Montserrat', sans-serif;
+  font: 600 33px/26px #{$body-font-family}, sans-serif;
   margin: 0;
 }
 
 h3 {
   color: #0d113d;
-  font: 600 26px/1 'Montserrat', sans-serif;
+  font: 600 26px/1 #{$body-font-family}, sans-serif;
   text-transform: uppercase;
 }
 .padding-border {
@@ -59,7 +59,7 @@ ul {
 
 p {
   color: #0d113d;
-  font: 300 15px/26px 'Montserrat', sans-serif;
+  font: 300 15px/26px #{$body-font-family}, sans-serif;
   margin: 0;
 }
 span {display: inline-block;}
@@ -74,7 +74,7 @@ a {
   border-radius: 5px;
   color: #ffffff;
   display: inline-block;
-  font: 400 18px/1 'Montserrat', sans-serif;
+  font: 400 18px/1 #{$body-font-family}, sans-serif;
   padding: 18px 15px;
   text-align: center;
   text-transform: uppercase;
