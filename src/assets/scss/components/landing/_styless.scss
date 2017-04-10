@@ -72,6 +72,11 @@ main {
 
 .support-block {
   padding-top: 65px;
+
+}
+.support-block .img-holder {
+  display: flex;
+  align-items: flex-end;
 }
 .support-block .relative-holder {
   padding-bottom: 90px;
@@ -83,12 +88,12 @@ main {
 .support-block p {
   margin-bottom: 35px;
 }
-.support-block img {
-  position: absolute;
-  left: -100%;
-  bottom: 0;
-  transform: translateX(50%);
-}
+//.support-block img {
+//  position: absolute;
+//  left: -100%;
+//  bottom: 0;
+//  transform: translateX(50%);
+//}
 
 .support-block-list {
   color: #616161;
